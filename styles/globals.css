@@ -2,11 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+	font-family: Raleway;
+	src: url('../public/Raleway-VariableFont_wght.ttf') format('truetype'),
+		url('../public/Raleway-Italic-VariableFont_wght.ttf')
+			format('truetype');
+	font-stretch: 25% 150%;
+	font-style: oblique 0 1;
+	font-weight: 100 900;
+	font-display: swap;
+}
+
+.raleway {
+	font-family: Raleway;
+}
+
 body {
-	@apply p-safe min-h-screen text-gray-900 bg-gray-50 dark:text-gray-50 dark:bg-gray-900 antialiased select-none;
+	@apply p-safe min-h-screen text-gray-900 bg-gray-50  antialiased;
 
 	/* PWA enhancements */
 	-webkit-overflow-scrolling: touch;
 	-webkit-tap-highlight-color: transparent;
 	-webkit-touch-callout: none;
+}
+
+.map_svg__path {
+	stroke-dasharray: 49 1;
+	animation: dash 5s linear infinite;
+}
+
+.map_svg__reverse-anim {
+	animation-direction: reverse;
+}
+
+@keyframes dash {
+	from {
+		stroke-dashoffset: 100;
+	}
+}
+
+
+.property-display, .property-display::before, .property-display::after {
+	transition: all 0.1s;
+}
+
+.property-display, .property-display * {
+	@apply bg-gradient-to-r from-pace-green to-pace-pine bg-clip-text opacity-90;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+}
+
+.rtl{
+	direction: rtl;
 }

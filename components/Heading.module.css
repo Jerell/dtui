@@ -1,0 +1,4 @@
+.heading {
+	@apply font-semibold flex-grow;
+	font-family: Raleway;
+}

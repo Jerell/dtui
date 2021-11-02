@@ -8,7 +8,17 @@ module.exports = {
 		extend: {
 			colors: {
 				gray: colors.gray,
+				pace: {
+					green: '#84BB27',
+					raisin: '#202030',
+					violet: '#39304A',
+					grey: '#5a5a5a',
+					pine: '#0B7A75',
+				},
 			},
+		},
+		zIndex: {
+			negative: -1,
 		},
 	},
 	plugins: [require('tailwindcss-safe-area')],

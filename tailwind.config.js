@@ -1,5 +1,5 @@
-const colors = require('tailwindcss/colors')
-const plugin = require('tailwindcss/plugin')
+const colors = require('tailwindcss/colors');
+const plugin = require('tailwindcss/plugin');
 
 module.exports = {
 	purge: ['./**/*.css', './{pages,components}/**/*.{js,ts,jsx,tsx}'],
@@ -14,6 +14,8 @@ module.exports = {
 					violet: '#39304A',
 					grey: '#5a5a5a',
 					pine: '#0B7A75',
+					blue: '#7C77B9',
+					aero: '#BFFFF1',
 				},
 			},
 		},
@@ -22,4 +24,4 @@ module.exports = {
 		},
 	},
 	plugins: [require('tailwindcss-safe-area')],
-}
+};

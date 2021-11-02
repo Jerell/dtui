@@ -9,3 +9,5 @@ node_modules
 **/public/sw**
 
 .firebase
+
+./tsconfig.tsbuildinfo

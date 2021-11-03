@@ -1,0 +1,16 @@
+.topbar nav div.items a{
+  @apply relative h-full flex flex-col justify-end items-center px-2;
+}
+
+.topbar nav div.items a::before {
+  @apply absolute bottom-0 transition-all h-1 w-full bg-white;
+  content: '';
+}
+
+.topbar nav div.items a:hover::before {
+  @apply h-full;
+}
+
+.topbar nav div.items p {
+  @apply m-0 mb-2 z-10;
+}

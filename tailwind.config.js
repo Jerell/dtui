@@ -18,9 +18,9 @@ module.exports = {
 					aero: '#BFFFF1',
 				},
 			},
-		},
-		zIndex: {
-			negative: -1,
+			zIndex: {
+				negative: -1,
+			},
 		},
 	},
 	plugins: [require('tailwindcss-safe-area')],

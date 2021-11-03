@@ -1,5 +1,5 @@
 .diagonalBox{
-  @apply relative;
+  @apply relative h-full;
 }
 
 .diagonalBox::before {

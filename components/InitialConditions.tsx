@@ -38,7 +38,7 @@ const InitialConditions = ({ type }: IInitialConditionsProps) => {
 				) : (
 					<>
 						<div className='flex flex-col space-y-2'>
-							<div className='flex justify-center space-x-6'>
+							<div className='flex justify-center space-x-6 px-2'>
 								<DateSelect label='Start' />
 								<DateSelect label='End' />
 							</div>

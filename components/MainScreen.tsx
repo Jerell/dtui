@@ -5,10 +5,10 @@ import { DiagonalBox } from './DiagonalBox';
 
 export const MainScreen = () => (
 	<Page>
-		<section className='my-32 relative'>
-			<div className='absolute w-full -top-28 z-negative'>
+		<section className='mb-20 mt-16 relative py-10'>
+			<div className='absolute w-full h-full -top-10 z-negative'>
 				<DiagonalBox>
-					<div className='h-96 w-full'></div>
+					<div className='h-full w-full'></div>
 				</DiagonalBox>
 			</div>
 			<div className='px-2'>

@@ -39,7 +39,7 @@ const UnitSelect = ({ type, selectUnit }) => {
 			</label>
 			<select
 				name='unit'
-				className='outline-none bg-green-50'
+				className='outline-none bg-green-50 w-16'
 				onChange={(e) => selectUnit(e.target.value)}
 			>
 				{options.map((o, i) => (

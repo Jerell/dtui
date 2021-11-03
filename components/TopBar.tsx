@@ -13,7 +13,7 @@ const TopBar = () => {
 
 	return (
 		<div className={`${styles.topbar} pt-safe w-full relative top-0 z-20`}>
-			<header className='bg-pace-blue text-white'>
+			<header className='bg-pace-blue text-white pl-2'>
 				<div className='mx-auto pr-6 h-16 flex items-end justify-between'>
 					<Link href='/'>
 						<a>

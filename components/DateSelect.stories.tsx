@@ -11,8 +11,8 @@ const Template: ComponentStory<typeof DateSelect> = (args) => (
 	<DateSelect {...args} />
 );
 
-export const standard = Template.bind({});
-standard.args = {
+export const Default = Template.bind({});
+Default.args = {
 	label: 'Date',
 	required: false,
 	labelClasses: '',

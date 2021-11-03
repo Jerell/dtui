@@ -1,11 +1,10 @@
-import Page from '@/components/page'
+import Page from '@/components/page';
+import { DisplayText } from '@/components/DisplayText';
 
 const Index = () => (
 	<Page>
-		<section className='mt-20'>
-			<h2 className='text-xl font-semibold text-gray-800 dark:text-gray-200'>
-				We grow a lot of rice.
-			</h2>
+		<section>
+			<DisplayText>We grow a lot of rice</DisplayText>
 
 			<p className='mt-2 text-gray-600 dark:text-gray-400'>
 				You love rice, and so does the rest of the world. In the crop year
@@ -17,6 +16,6 @@ const Index = () => (
 			</p>
 		</section>
 	</Page>
-)
+);
 
-export default Index
+export default Index;

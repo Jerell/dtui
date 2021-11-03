@@ -6,6 +6,7 @@ import { Heading } from './Heading';
 export default {
 	title: 'Components/Heading',
 	component: Heading,
+	decorators: [(story) => <div style={{ padding: '3rem' }}>{story()}</div>],
 } as ComponentMeta<typeof Heading>;
 
 const Template: ComponentStory<typeof Heading> = (args) => (
@@ -35,5 +36,10 @@ level4.args = {
 export const level5 = Template.bind({});
 level5.args = {
 	level: 5,
+	children: 'Text',
+};
+export const level6 = Template.bind({});
+level6.args = {
+	level: 6,
 	children: 'Text',
 };

@@ -1,6 +1,7 @@
 import { Heading } from './Heading';
 import NumberInput from './NumberInput';
 import Button from './Button';
+import DateSelect from './DateSelect';
 
 interface IInitialConditionsProps {
 	type: 'snapshot' | 'life of field';
@@ -25,12 +26,30 @@ const InitialConditions = ({ type }: IInitialConditionsProps) => {
 					<NumberInput label='temperature' unitListType='temperature' />
 					<NumberInput label='flowrate' unitListType='flowrate' />
 				</SingleComponentFields>
+
 				<SingleComponentFields heading='Reservoir'>
 					<NumberInput label='pressure' unitListType='pressure' />
 				</SingleComponentFields>
-				<div className='flex justify-center'>
-					<Button />
-				</div>
+
+				{type === 'snapshot' ? (
+					<div className='flex justify-center space-x-6'>
+						<Button />
+					</div>
+				) : (
+					<>
+						<div className='flex flex-col space-y-2'>
+							<div className='flex justify-center space-x-6'>
+								<DateSelect label='Start' />
+								<DateSelect label='End' />
+							</div>
+							<div className='flex justify-center space-x-6'>
+								<Button text={'days'} />
+								<Button text={'weeks'} />
+								<Button text={'months'} />
+							</div>
+						</div>
+					</>
+				)}
 			</div>
 		</div>
 	);

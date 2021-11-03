@@ -3,8 +3,8 @@ import { useRouter } from 'next/router';
 import styles from './TopBar.module.css';
 
 const links = [
-	{ label: 'Second page', href: '/page' },
-	{ label: 'Third page', href: '/page' },
+	{ label: 'Components', href: '/components' },
+	{ label: 'Previous runs', href: '/previous' },
 	{ label: 'Another page', href: '/page' },
 ];
 

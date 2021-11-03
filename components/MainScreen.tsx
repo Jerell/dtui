@@ -11,10 +11,12 @@ export const MainScreen = () => (
 					<div className='h-96 w-full'></div>
 				</DiagonalBox>
 			</div>
-			<DisplayText>Simulate the evolution of a pipeline network</DisplayText>
+			<div className='px-2'>
+				<DisplayText>Simulate the evolution of a pipeline network</DisplayText>
+			</div>
 		</section>
-		<section className='mt-12'>
-			<div className='flex space-x-6 justify-end'>
+		<section className='mt-12 px-6'>
+			<div className='flex space-x-6 justify-around'>
 				<InitialConditions type='snapshot' />
 				<InitialConditions type='life of field' />
 			</div>

@@ -14,7 +14,8 @@
 		"type-check": "tsc",
 		"pretty": "prettier --write \"./**/*.{js,jsx,json,ts,tsx}\"",
 		"storybook": "start-storybook -p 6006 -s ./public",
-		"build-storybook": "build-storybook"
+		"build-storybook": "build-storybook",
+		"chromatic": "chromatic --exit-zero-on-changes"
 	},
 	"dependencies": {
 		"@fortawesome/fontawesome-svg-core": "^1.2.36",

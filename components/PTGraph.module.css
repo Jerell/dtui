@@ -1,0 +1,8 @@
+.yaxis{
+  @apply text-center;
+  writing-mode: vertical-lr;
+  text-orientation: sideways;
+}
+.xaxis{
+  @apply absolute bottom-0 left-0 right-0 text-center;
+}

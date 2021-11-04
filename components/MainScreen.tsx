@@ -2,6 +2,8 @@ import Page from './page';
 import { DisplayText } from './DisplayText';
 import InitialConditions from './InitialConditions';
 import { DiagonalBox } from './DiagonalBox';
+import { PTGraph } from './PTGraph';
+import { Heading } from './Heading';
 
 export const MainScreen = () => (
 	<Page>
@@ -18,6 +20,12 @@ export const MainScreen = () => (
 		<section className='mt-12 px-6'>
 			<div className='flex space-x-6 justify-around'>
 				<InitialConditions type='snapshot' />
+				<div className='flex-flex-col'>
+					<div className='ml-6'>
+						<Heading level={2}>Event boundaries</Heading>
+					</div>
+					<PTGraph />
+				</div>
 				<InitialConditions type='life of field' />
 			</div>
 		</section>

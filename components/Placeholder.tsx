@@ -3,6 +3,6 @@ import styles from './Placeholder.module.css';
 
 export const Placeholder = () => (
 	<div className={styles.gradient}>
-		<DisplayText>Placeholder</DisplayText>
+		<DisplayText>Placeholder!</DisplayText>
 	</div>
 );

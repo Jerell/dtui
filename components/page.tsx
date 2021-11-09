@@ -17,14 +17,8 @@ const Page = ({ title, children }: Props) => (
 
 		<TopBar />
 
-		<main
-			/**
-			 * Padding top = `appbar` height
-			 * Padding bottom = `bottom-nav` height
-			 */
-			className='mx-auto'
-		>
-			<div>{children}</div>
+		<main className='mx-auto'>
+			<div className='flex flex-col items-center bg-gray-50'>{children}</div>
 		</main>
 
 		<BottomNav />

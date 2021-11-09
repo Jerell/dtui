@@ -1,11 +1,11 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import InitialConditions from './InitialConditions';
+import InitialConditionsForm from './InitialConditionsForm';
 
 export default {
-	title: 'Components/InitialConditions',
-	component: InitialConditions,
+	title: 'Components/InitialConditionsForm',
+	component: InitialConditionsForm,
 	decorators: [(story) => <div style={{ padding: '3rem' }}>{story()}</div>],
 	argTypes: {
 		// foo is the property we want to remove from the UI
@@ -15,10 +15,10 @@ export default {
 			},
 		},
 	},
-} as ComponentMeta<typeof InitialConditions>;
+} as ComponentMeta<typeof InitialConditionsForm>;
 
-const Template: ComponentStory<typeof InitialConditions> = (args) => (
-	<InitialConditions {...args} />
+const Template: ComponentStory<typeof InitialConditionsForm> = (args) => (
+	<InitialConditionsForm {...args} />
 );
 
 export const Snapshot = Template.bind({});

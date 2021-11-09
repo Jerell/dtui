@@ -1,5 +1,5 @@
 .gradient{
-  @apply relative flex justify-center items-center h-full bg-gradient-to-r from-pace-pine to-pace-raisin p-10;
+  @apply relative flex justify-center items-center h-full bg-gradient-to-r from-pace-raisin to-pace-pine p-10;
 }
 
 .gradient::before{

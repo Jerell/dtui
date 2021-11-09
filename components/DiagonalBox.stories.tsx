@@ -2,6 +2,7 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { DiagonalBox } from './DiagonalBox';
+import { DisplayText } from './DisplayText';
 
 export default {
 	title: 'Components/DiagonalBox',
@@ -14,5 +15,11 @@ const Template: ComponentStory<typeof DiagonalBox> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
-	children: 'Text',
+	children: (
+		<div className='flex justify-center'>
+			<div className='max-w-screen-xl'>
+				<DisplayText>Simulate the evolution of a pipeline network</DisplayText>
+			</div>
+		</div>
+	),
 };

@@ -3,11 +3,11 @@
 }
 
 .diagonalBox::before {
-  @apply absolute top-0 right-0 bottom-0 left-0 bg-gradient-to-r from-pace-raisin to-pace-violet;
+  @apply absolute z-0 top-0 right-0 bottom-0 left-0 bg-gradient-to-r from-pace-raisin to-pace-violet;
   content: '';
   transform: skewY(-4deg);
 }
 
 .content{
-  
+  @apply relative;
 }

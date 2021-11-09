@@ -28,7 +28,7 @@ export default function DateSelect({
 			</label>
 			<input
 				type='date'
-				className='min-w-min inline-flex border border-green-300 focus-within:ring-green-100 focus-within:ring focus-within:border-green-500 focus:outline-none'
+				className='min-w-min inline-flex border border-green-300 focus-within:ring-green-100 focus-within:ring focus-within:border-green-500 focus:outline-none chromatic-ignore'
 				onChange={(e) => setDate(new Date(e.target.value))}
 				defaultValue={yyyymmdd(placeholder)}
 			/>

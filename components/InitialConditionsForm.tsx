@@ -39,7 +39,7 @@ const InitialConditionsForm = ({
 
 	return (
 		<div>
-			<div className='mt-2 pb-2 bg-white'>
+			<div className='pb-2 bg-white'>
 				<SingleComponentFields heading='Inlet'>
 					<NumberInput label='temperature' unitListType='temperature' />
 					<NumberInput label='flowrate' unitListType='flowrate' />
@@ -48,6 +48,20 @@ const InitialConditionsForm = ({
 				<SingleComponentFields heading='Reservoir'>
 					<NumberInput label='pressure' unitListType='pressure' />
 				</SingleComponentFields>
+
+				{!limited && (
+					<>
+						<SingleComponentFields heading='Wells: Hamilton'>
+							<NumberInput label='Number of wells' />
+						</SingleComponentFields>
+						<SingleComponentFields heading='Wells: Hamilton North'>
+							<NumberInput label='Number of wells' />
+						</SingleComponentFields>
+						<SingleComponentFields heading='Wells: Lennox'>
+							<NumberInput label='Number of wells' />
+						</SingleComponentFields>
+					</>
+				)}
 
 				{type === 'snapshot' ? (
 					<Row>
